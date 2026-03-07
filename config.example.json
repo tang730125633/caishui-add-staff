@@ -1,0 +1,12 @@
+{
+  "_comment": "财税通API配置 - 运行 auto_config_helper.py 自动生成",
+  "token": "your_token_here",
+  "company_id": "your_company_id",
+  "base_url": "https://cst.uf-tree.com",
+  "api_endpoint": "/api/member/userInfo/add",
+  "department_map": {
+    "测试门店1": 9151,
+    "测试门店2": 9152,
+    "测试门店3": 9153
+  }
+}
