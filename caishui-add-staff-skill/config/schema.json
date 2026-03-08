@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CaishuiAddStaffConfig",
+  "description": "财税通员工批量添加工具配置",
+  "type": "object",
+  "properties": {
+    "debug_port": {
+      "type": "string",
+      "description": "浏览器调试端口",
+      "default": "9222"
+    },
+    "base_url": {
+      "type": "string",
+      "description": "系统基础URL",
+      "default": "https://cst.uf-tree.com"
+    },
+    "company_id": {
+      "type": "integer",
+      "description": "企业ID",
+      "default": 7792
+    },
+    "method": {
+      "type": "string",
+      "enum": ["api", "browser"],
+      "description": "添加方式",
+      "default": "api"
+    },
+    "excel_file": {
+      "type": "string",
+      "description": "Excel文件路径",
+      "default": "employees.xlsx"
+    },
+    "timeout": {
+      "type": "integer",
+      "description": "操作超时时间(秒)",
+      "default": 10
+    }
+  },
+  "required": ["debug_port", "base_url", "company_id"]
+}
