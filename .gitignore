@@ -4,6 +4,9 @@ __pycache__/
 *$py.class
 *.so
 .Python
+env/
+venv/
+ENV/
 build/
 develop-eggs/
 dist/
@@ -21,10 +24,9 @@ wheels/
 *.egg
 
 # Virtual Environment
-venv/
-ENV/
-env/
-.venv
+bin/
+include/
+pyvenv.cfg
 
 # IDE
 .vscode/
@@ -32,37 +34,16 @@ env/
 *.swp
 *.swo
 *~
+
+# OS
 .DS_Store
-
-# Playwright
-playwright/.cache/
-test-results/
-playwright-report/
-
-# Data files (user-specific)
-*.xlsx
-*.csv
-*.xls
-!employees_example.csv
+Thumbs.db
 
 # Logs
 *.log
-logs/
 
-# Environment variables
-.env
-.env.local
-
-# Temporary files
-tmp/
-temp/
-*.tmp
-
-# Screenshots (generated during runtime)
-*.png
-*.jpg
-
-# Config files (user-specific)
+# Local config
 config.json
-config.yaml
-config.yml
+.env
+department_map.json
+x_token*.json

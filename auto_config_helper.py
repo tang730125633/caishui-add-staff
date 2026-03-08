@@ -230,7 +230,8 @@ def main():
     print("  • 已进入企业（不在'选择企业'页面）")
     print("\n" + "="*60)
     
-    input("\n确认浏览器已启动调试模式并登录后，按回车继续...")
+    print("\n自动继续...")
+    time.sleep(1)
     
     try:
         with sync_playwright() as p:
